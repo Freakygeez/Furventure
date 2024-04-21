@@ -1,16 +1,19 @@
-﻿define player = Character("You")
+﻿define player = Character("You") # Main char is a deer
 define driver = Character("Driver")
 
-# Is it a brand new game?
-$new = True 
+
+$ Stats = {
+    Health: 10,
+    Attack: 3,
+    Deffence: 5,
+    Strength: 5,
+    Agility: 6,
+    Dexterity: 7
+}
 
 #### PROLOGUE ####
 
 label start:
-    if new:
-        jump Character_Creation 
-    new = False
-
     with Fade(2, 3, 3)
     play sound 'Atmos/Cart.wav' 
     scene cart 
