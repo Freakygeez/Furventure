@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/script.rpy", line 49: 'return' outside function
+
+File "game/script.rpy", line 72: 'return' outside function
+
+Ren'Py Version: Ren'Py 8.2.2.24041101+nightly
+Mon Apr 22 16:50:03 2024

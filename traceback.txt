@@ -1,0 +1,26 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 46, in script
+    python:
+  File "game/script.rpy", line 48, in <module>
+    roll = Stat_check(Stats['Agility'])
+NameError: name 'Stats' is not defined
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 46, in script
+    python:
+  File "/home/unkown/Renpy/renpy/ast.py", line 823, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "/home/unkown/Renpy/renpy/python.py", line 1178, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/script.rpy", line 48, in <module>
+    roll = Stat_check(Stats['Agility'])
+NameError: name 'Stats' is not defined
+
+Linux-6.5.0-28-generic-x86_64-with-glibc2.38 x86_64
+Ren'Py 8.2.2.24041101+nightly
+Adventure 1.1.0
+Mon Apr 22 16:51:36 2024

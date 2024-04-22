@@ -1,6 +1,7 @@
 ﻿define player = Character("You") # Main char is a deer
 define driver = Character("Driver")
-
+define fox = Character("Fox")
+define cat = Character("Cat")
 
 $ Stats = {
     Health: 10,
@@ -26,9 +27,10 @@ driver "Oh you're alive then, good. I found's you on the side of the road passed
 
 show driver serious
 driver "Anyway, you're mine now see, slavers rights and all that.... 
-        I'm taking you to Sabel, to be sold. I suppose you could try to run, by the state of you I'd give you maybe a hour before I found's yer again..."
-        "Wouldn't be too pleased mind, would have to take it on on yer."
-Stats['Health'] = 3
+        I'm taking you to Sabel, to be sold. I suppose you could try to run, by the state of you I'd give you maybe a hour before I found's yer again...
+        Wouldn't be too pleased mind, would have to take it on on yer."
+
+#Stats['Health'] = 3
 "You have 3 HP remaining. You might be able to escape but it'll be risky..."
 show driver laugh fade normal
 
@@ -43,62 +45,58 @@ menu Cart_Escape:
             "Go for the legs! (Agil check)":
                 python:
                     from Game_Logic import Stat_check
-                    roll = Stat_check(Stats['Agility'], 18)
-                    return roll
-                show roll
-                if roll[1] = True:
-                "As the driver turns to leave you boot him in the back of his knees"
-                "He falls out of the cart, you jump over him and make a dash for the nearest trees..."
-                "D12 to suceed..."
-                elif roll[0] > 18:
+                    roll = Stat_check(Stats['Agility'])
+                #show roll  will eventually show a number on screen
+                if roll >= 18:
                     "As the driver turns to leave you boot him in the back of his knees"
                     "He completely looses his balance faling out of the cart"
                     "His head slams hard onto the dirt, knocking him out cold"
                     
-                elif roll[0] < 5:
+                elif roll < 5:
                     "You attempt to boot the back of the drivers knees as he is about to leave but in your haste you totally miss!"
                     "You end up square on your butt, fortunately the driver didn't seem to notice or just assumed you were still feeling uneasy"
-                elif roll[1] = False:
+                elif 5 >= roll < 18:
                     "You hit the back of the drivers knees causing them to buckle slightly... To your horror nothing happens"
-                    driver = "Are you done? I was being nice but now it's my turn!"
+                    
+                    driver "Are you done? I was being nice but now it's my turn!"
+
                     "The driver whips his body round and backhands you"
-                    fade
+
+                    with Fade
                     jump sabel_as_slave
 
                 python:
                     from Game_Logic import Stat_check
-                    roll = Stat_check(Stats['Sta'], 12)
-                    return roll
-                show roll
-                if roll[1] = True:
-
-
-
-
-
-
+                    roll = Stat_check(Stats['Sta'])
+                    
             "Go for the face! (Agil + str check)":
+                "Face combat"
                 #Agil check since the player is sitting down, for them to 
                 #Get up and hit in time
                 # str for damage if agil check returns true
             
-    "Step outside and run! (Agility and sta check)"
+    "Step outside and run! (Agility and sta check)":
+        "Jump to outside run logic"
         #Agility check to avoid whip
         #Sta check to keep running 
 
 label outside_cart:
     scene cart exterior with fade
     "Stepping out you are able to better see your surroundings"
-    "You appear to be on a main trail heading West toward Deapbury"
-    "There are only two others with you, a cat and a kobold along with the Driver"
+    "You appear to be on a main trail heading West toward Sabel"
+    "There are only two others with you, a cat and a Fox along with the Driver"
     menu Cart_Info:
         "What do you do?"
         "Talk again to the driver":
+            "Driver text"
             #block of code to run
         "Talk to the cat":
+            "Cat text"
             #block of code to run
-        "Talk to the Kobold":
+        "Talk to the Fox":
+            "Fox Text"
             #Code here
-        "Only one guard? I'm running!"
+        "Only one guard? I'm running!":
+            "Jump back to escape logic"
             #Agility check logic with sub menu
         

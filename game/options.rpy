@@ -12,7 +12,7 @@
 ##
 ## The _() surrounding the string marks it as eligible for translation.
 
-define config.name = _("Adventure")
+define config.name = _("Furventure")
 
 
 ## Determines if the title given above is shown on the main menu screen. Set
@@ -23,14 +23,14 @@ define gui.show_name = True
 
 ## The version of the game.
 
-define config.version = "1.1.0"
+define config.version = "1.1.1"
 
 
 ## Text that is placed on the game's about screen. Place the text between the
 ## triple-quotes, and leave a blank line between paragraphs.
 
 define gui.about = _p("""
-Furry nsfw DnD style adventure game
+Furry DnD style adventure game
 """)
 
 
@@ -38,7 +38,7 @@ Furry nsfw DnD style adventure game
 ## distribution. This must be ASCII-only, and must not contain spaces, colons,
 ## or semicolons.
 
-define build.name = "Adventure"
+define build.name = "Furventure"
 
 
 ## Sounds and music ############################################################
@@ -49,7 +49,7 @@ define build.name = "Adventure"
 
 define config.has_sound = True
 define config.has_music = True
-define config.has_voice = True
+define config.has_voice = False
 
 
 ## To allow the user to play a test sound on the sound or voice channel,
@@ -121,7 +121,7 @@ define config.window_hide_transition = Dissolve(.2)
 ## Controls the default text speed. The default, 0, is infinite, while any other
 ## number is the number of characters per second to type out.
 
-default preferences.text_cps = 3
+default preferences.text_cps = 12
 
 
 ## The default auto-forward delay. Larger numbers lead to longer waits, with 0
@@ -144,7 +144,7 @@ default preferences.afm_time = 15
 ## This generally should not be changed, and if it is, should always be a
 ## literal string, not an expression.
 
-define config.save_directory = "Adventure-1712983296"
+define config.save_directory = "Furventure"
 
 
 ## Icon ########################################################################

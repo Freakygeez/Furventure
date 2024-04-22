@@ -1,29 +1,932 @@
-2024-04-13 04:41:44 UTC
-Linux-6.5.0-27-generic-x86_64-with-glibc2.38
+2024-04-22 03:11:48 UTC
+Linux-6.5.0-28-generic-x86_64-with-glibc2.38
 Ren'Py 8.2.2.24041101+nightly
 
 Early init took 0.06s
-Loading error handling took 0.04s
-Loading script took 0.08s
+Loading error handling took 0.06s
+Loading script took 0.95s
 Loading save slot metadata took 0.03s
 Loading persistent took 0.00s
-Running init code took 0.04s
+
+File "game/script.rpy", line 32: expected statement.
+    Stats['Health'] = 3
+                    ^
+
+File "game/script.rpy", line 50: if statement expects a non-empty block.
+    if roll[1] = True:
+                      ^
+
+File "game/script.rpy", line 54: expected statement.
+    elif roll[0] > 18:
+             ^
+
+File "game/script.rpy", line 59: expected statement.
+    elif roll[0] < 5:
+             ^
+
+File "game/script.rpy", line 62: expected statement.
+    elif roll[1] = False:
+             ^
+
+File "game/script.rpy", line 74: if statement expects a non-empty block.
+    if roll[1] = True:
+                      ^
+
+File "game/script.rpy", line 81: choice menuitem expects a non-empty block.
+    "Go for the face! (Agil + str check)":
+                                          ^
+
+File "game/script.rpy", line 97: choice menuitem expects a non-empty block.
+    "Talk again to the driver":
+                               ^
+DPI scale factor: 1.000000
+Interface start took 0.21s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Mesa Intel(R) HD Graphics 520 (SKL GT2)'
+Version: b'4.6 (Compatibility Profile) Mesa 23.2.1-1ubuntu3.1'
+Display Info: None
+Screen sizes: virtual=(1280, 720) physical=(1184, 666) drawable=(1184, 666)
+Could not open 'cache/shaders.txt':
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1280, 720) physical=(1296, 699) drawable=(1296, 699)
+Could not open 'cache/shaders.txt':
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 207.30s
+Loading error handling took 0.06s
+Loading script took 0.92s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+
+File "game/script.rpy", line 33: expected statement.
+    Stats['Health'] = 3
+                    ^
+
+File "game/script.rpy", line 51: if statement expects a non-empty block.
+    if roll[1] == True:
+                       ^
+
+File "game/script.rpy", line 55: expected statement.
+    elif roll[0] > 18:
+             ^
+
+File "game/script.rpy", line 60: expected statement.
+    elif roll[0] < 5:
+             ^
+
+File "game/script.rpy", line 63: expected statement.
+    elif roll[1] == False:
+             ^
+
+File "game/script.rpy", line 75: if statement expects a non-empty block.
+    if roll[1] = True:
+                      ^
+
+File "game/script.rpy", line 82: choice menuitem expects a non-empty block.
+    "Go for the face! (Agil + str check)":
+                                          ^
+
+File "game/script.rpy", line 98: choice menuitem expects a non-empty block.
+    "Talk again to the driver":
+                               ^
+DPI scale factor: 1.000000
+Interface start took 0.08s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Mesa Intel(R) HD Graphics 520 (SKL GT2)'
+Version: b'4.6 (Compatibility Profile) Mesa 23.2.1-1ubuntu3.1'
+Display Info: None
+Screen sizes: virtual=(1280, 720) physical=(1296, 699) drawable=(1296, 699)
+Could not open 'cache/shaders.txt':
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1280, 720) physical=(1296, 699) drawable=(1296, 699)
+Could not open 'cache/shaders.txt':
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1280, 720) physical=(1366, 699) drawable=(1366, 699)
+Could not open 'cache/shaders.txt':
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1280, 720) physical=(1296, 699) drawable=(1296, 699)
+Could not open 'cache/shaders.txt':
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 12103.75s
+Loading error handling took 0.06s
+Loading script took 0.92s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+
+File "game/script.rpy", line 33: expected statement.
+    Stats['Health'] = 3
+                    ^
+
+File "game/script.rpy", line 51: if statement expects a non-empty block.
+    if roll[1] == True:
+                       ^
+
+File "game/script.rpy", line 55: expected statement.
+    elif roll[0] > 18:
+             ^
+
+File "game/script.rpy", line 60: expected statement.
+    elif roll[0] < 5:
+             ^
+
+File "game/script.rpy", line 63: expected statement.
+    elif roll[1] == False:
+             ^
+
+File "game/script.rpy", line 75: if statement expects a non-empty block.
+    if roll[1] = True:
+                      ^
+
+File "game/script.rpy", line 82: choice menuitem expects a non-empty block.
+    "Go for the face! (Agil + str check)":
+                                          ^
+
+File "game/script.rpy", line 98: choice menuitem expects a non-empty block.
+    "Talk again to the driver":
+                               ^
+DPI scale factor: 1.000000
+Interface start took 0.08s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Mesa Intel(R) HD Graphics 520 (SKL GT2)'
+Version: b'4.6 (Compatibility Profile) Mesa 23.2.1-1ubuntu3.1'
+Display Info: None
+Screen sizes: virtual=(1280, 720) physical=(1296, 699) drawable=(1296, 699)
+Could not open 'cache/shaders.txt':
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1280, 720) physical=(1296, 699) drawable=(1296, 699)
+Could not open 'cache/shaders.txt':
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 12105.48s
+Loading error handling took 0.06s
+Loading script took 0.93s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+
+File "game/script.rpy", line 33: expected statement.
+    Stats['Health'] = 3
+                    ^
+
+File "game/script.rpy", line 51: if statement expects a non-empty block.
+    if roll[1] == True:
+                       ^
+
+File "game/script.rpy", line 55: expected statement.
+    elif roll[0] > 18:
+             ^
+
+File "game/script.rpy", line 60: expected statement.
+    elif roll[0] < 5:
+             ^
+
+File "game/script.rpy", line 63: expected statement.
+    elif roll[1] == False:
+             ^
+
+File "game/script.rpy", line 75: if statement expects a non-empty block.
+    if roll[1] = True:
+                      ^
+
+File "game/script.rpy", line 82: choice menuitem expects a non-empty block.
+    "Go for the face! (Agil + str check)":
+                                          ^
+
+File "game/script.rpy", line 98: choice menuitem expects a non-empty block.
+    "Talk again to the driver":
+                               ^
+DPI scale factor: 1.000000
+Interface start took 0.08s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Mesa Intel(R) HD Graphics 520 (SKL GT2)'
+Version: b'4.6 (Compatibility Profile) Mesa 23.2.1-1ubuntu3.1'
+Display Info: None
+Screen sizes: virtual=(1280, 720) physical=(1296, 699) drawable=(1296, 699)
+Could not open 'cache/shaders.txt':
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1280, 720) physical=(1296, 699) drawable=(1296, 699)
+Could not open 'cache/shaders.txt':
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 12106.71s
+Loading error handling took 0.06s
+Loading script took 0.95s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+
+File "game/script.rpy", line 33: expected statement.
+    Stats['Health'] = 3
+                    ^
+
+File "game/script.rpy", line 51: if statement expects a non-empty block.
+    if roll[1] == True:
+                       ^
+
+File "game/script.rpy", line 55: expected statement.
+    elif roll[0] > 18:
+             ^
+
+File "game/script.rpy", line 60: expected statement.
+    elif roll[0] < 5:
+             ^
+
+File "game/script.rpy", line 63: expected statement.
+    elif roll[1] == False:
+             ^
+
+File "game/script.rpy", line 75: if statement expects a non-empty block.
+    if roll[1] = True:
+                      ^
+
+File "game/script.rpy", line 82: choice menuitem expects a non-empty block.
+    "Go for the face! (Agil + str check)":
+                                          ^
+
+File "game/script.rpy", line 98: choice menuitem expects a non-empty block.
+    "Talk again to the driver":
+                               ^
+DPI scale factor: 1.000000
+Interface start took 0.08s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Mesa Intel(R) HD Graphics 520 (SKL GT2)'
+Version: b'4.6 (Compatibility Profile) Mesa 23.2.1-1ubuntu3.1'
+Display Info: None
+Screen sizes: virtual=(1280, 720) physical=(1296, 699) drawable=(1296, 699)
+Could not open 'cache/shaders.txt':
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1280, 720) physical=(1296, 699) drawable=(1296, 699)
+Could not open 'cache/shaders.txt':
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 12117.94s
+Loading error handling took 0.06s
+Loading script took 0.91s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+
+File "game/script.rpy", line 33: expected statement.
+    Stats['Health'] = 3
+                    ^
+
+File "game/script.rpy", line 51: if statement expects a non-empty block.
+    if (roll[1] == True):
+                         ^
+
+File "game/script.rpy", line 55: expected statement.
+    elif roll[0] > 18:
+             ^
+
+File "game/script.rpy", line 60: expected statement.
+    elif roll[0] < 5:
+             ^
+
+File "game/script.rpy", line 63: expected statement.
+    elif roll[1] == False:
+             ^
+
+File "game/script.rpy", line 75: if statement expects a non-empty block.
+    if roll[1] = True:
+                      ^
+
+File "game/script.rpy", line 82: choice menuitem expects a non-empty block.
+    "Go for the face! (Agil + str check)":
+                                          ^
+
+File "game/script.rpy", line 98: choice menuitem expects a non-empty block.
+    "Talk again to the driver":
+                               ^
+DPI scale factor: 1.000000
+Interface start took 0.08s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Mesa Intel(R) HD Graphics 520 (SKL GT2)'
+Version: b'4.6 (Compatibility Profile) Mesa 23.2.1-1ubuntu3.1'
+Display Info: None
+Screen sizes: virtual=(1280, 720) physical=(1296, 699) drawable=(1296, 699)
+Could not open 'cache/shaders.txt':
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1280, 720) physical=(1296, 699) drawable=(1296, 699)
+Could not open 'cache/shaders.txt':
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 12119.30s
+Loading error handling took 0.06s
+Loading script took 0.93s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+
+File "game/script.rpy", line 33: expected statement.
+    Stats['Health'] = 3
+                    ^
+
+File "game/script.rpy", line 51: if statement expects a non-empty block.
+    if (roll[1] == True):
+                         ^
+
+File "game/script.rpy", line 55: expected statement.
+    elif roll[0] > 18:
+             ^
+
+File "game/script.rpy", line 60: expected statement.
+    elif roll[0] < 5:
+             ^
+
+File "game/script.rpy", line 63: expected statement.
+    elif roll[1] == False:
+             ^
+
+File "game/script.rpy", line 75: if statement expects a non-empty block.
+    if roll[1] = True:
+                      ^
+
+File "game/script.rpy", line 82: choice menuitem expects a non-empty block.
+    "Go for the face! (Agil + str check)":
+                                          ^
+
+File "game/script.rpy", line 98: choice menuitem expects a non-empty block.
+    "Talk again to the driver":
+                               ^
+DPI scale factor: 1.000000
+Interface start took 0.08s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Mesa Intel(R) HD Graphics 520 (SKL GT2)'
+Version: b'4.6 (Compatibility Profile) Mesa 23.2.1-1ubuntu3.1'
+Display Info: None
+Screen sizes: virtual=(1280, 720) physical=(1296, 699) drawable=(1296, 699)
+Could not open 'cache/shaders.txt':
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1280, 720) physical=(1296, 699) drawable=(1296, 699)
+Could not open 'cache/shaders.txt':
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 12668.35s
+Loading error handling took 0.06s
+Loading script took 0.91s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+
+File "game/script.rpy", line 33: expected statement.
+    Stats['Health'] = 3
+                    ^
+
+File "game/script.rpy", line 61: expected statement.
+    driver = "Are you done? I was being nice but now it's my turn!"
+           ^
+
+File "game/script.rpy", line 63: expected statement.
+    fade
+        ^
+
+File "game/script.rpy", line 71: if statement expects a non-empty block.
+    if roll[1] = True:
+                      ^
+
+File "game/script.rpy", line 78: choice menuitem expects a non-empty block.
+    "Go for the face! (Agil + str check)":
+                                          ^
+
+File "game/script.rpy", line 94: choice menuitem expects a non-empty block.
+    "Talk again to the driver":
+                               ^
+DPI scale factor: 1.000000
+Interface start took 0.08s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Mesa Intel(R) HD Graphics 520 (SKL GT2)'
+Version: b'4.6 (Compatibility Profile) Mesa 23.2.1-1ubuntu3.1'
+Display Info: None
+Screen sizes: virtual=(1280, 720) physical=(1296, 699) drawable=(1296, 699)
+Could not open 'cache/shaders.txt':
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1280, 720) physical=(1296, 699) drawable=(1296, 699)
+Could not open 'cache/shaders.txt':
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1280, 720) physical=(1296, 699) drawable=(1296, 699)
+Could not open 'cache/shaders.txt':
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1280, 720) physical=(1296, 699) drawable=(1296, 699)
+Could not open 'cache/shaders.txt':
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 12793.45s
+Loading error handling took 0.06s
+Loading script took 0.92s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+
+File "game/script.rpy", line 33: expected statement.
+    Stats['Health'] = 3
+                    ^
+
+File "game/script.rpy", line 61: expected statement.
+    driver = "Are you done? I was being nice but now it's my turn!"
+           ^
+
+File "game/script.rpy", line 63: expected statement.
+    fade
+        ^
+
+File "game/script.rpy", line 71: choice menuitem expects a non-empty block.
+    "Go for the face! (Agil + str check)":
+                                          ^
+
+File "game/script.rpy", line 87: choice menuitem expects a non-empty block.
+    "Talk again to the driver":
+                               ^
+DPI scale factor: 1.000000
+Interface start took 0.08s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Mesa Intel(R) HD Graphics 520 (SKL GT2)'
+Version: b'4.6 (Compatibility Profile) Mesa 23.2.1-1ubuntu3.1'
+Display Info: None
+Screen sizes: virtual=(1280, 720) physical=(1296, 699) drawable=(1296, 699)
+Could not open 'cache/shaders.txt':
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1280, 720) physical=(1296, 699) drawable=(1296, 699)
+Could not open 'cache/shaders.txt':
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1280, 720) physical=(1296, 699) drawable=(1296, 699)
+Could not open 'cache/shaders.txt':
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1280, 720) physical=(1296, 699) drawable=(1296, 699)
+Could not open 'cache/shaders.txt':
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 12908.99s
+Loading error handling took 0.06s
+Loading script took 0.93s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+
+File "game/script.rpy", line 33: expected statement.
+    Stats['Health'] = 3
+                    ^
+
+File "game/script.rpy", line 61: expected statement.
+    driver = "Are you done? I was being nice but now it's my turn!"
+           ^
+
+File "game/script.rpy", line 63: expected statement.
+    fade
+        ^
+
+File "game/script.rpy", line 98: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Only one guard? I'm running!"
+                                  ^
+DPI scale factor: 1.000000
+Interface start took 0.08s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Mesa Intel(R) HD Graphics 520 (SKL GT2)'
+Version: b'4.6 (Compatibility Profile) Mesa 23.2.1-1ubuntu3.1'
+Display Info: None
+Screen sizes: virtual=(1280, 720) physical=(1296, 699) drawable=(1296, 699)
+Could not open 'cache/shaders.txt':
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1280, 720) physical=(1296, 699) drawable=(1296, 699)
+Could not open 'cache/shaders.txt':
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 12912.80s
+Loading error handling took 0.06s
+Loading script took 1.03s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+
+File "game/script.rpy", line 33: expected statement.
+    Stats['Health'] = 3
+                    ^
+
+File "game/script.rpy", line 61: expected statement.
+    driver = "Are you done? I was being nice but now it's my turn!"
+           ^
+
+File "game/script.rpy", line 63: expected statement.
+    fade
+        ^
+
+File "game/script.rpy", line 98: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Only one guard? I'm running!"
+                                  ^
+DPI scale factor: 1.000000
+Interface start took 0.09s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Mesa Intel(R) HD Graphics 520 (SKL GT2)'
+Version: b'4.6 (Compatibility Profile) Mesa 23.2.1-1ubuntu3.1'
+Display Info: None
+Screen sizes: virtual=(1280, 720) physical=(1296, 699) drawable=(1296, 699)
+Could not open 'cache/shaders.txt':
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1280, 720) physical=(1296, 699) drawable=(1296, 699)
+Could not open 'cache/shaders.txt':
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 12921.89s
+Loading error handling took 0.06s
+Loading script took 0.93s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+
+File "game/script.rpy", line 33: expected statement.
+    Stats['Health'] = 3
+                    ^
+
+File "game/script.rpy", line 61: expected statement.
+    driver = "Are you done? I was being nice but now it's my turn!"
+           ^
+
+File "game/script.rpy", line 63: expected statement.
+    fade
+        ^
+DPI scale factor: 1.000000
+Interface start took 0.08s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Mesa Intel(R) HD Graphics 520 (SKL GT2)'
+Version: b'4.6 (Compatibility Profile) Mesa 23.2.1-1ubuntu3.1'
+Display Info: None
+Screen sizes: virtual=(1280, 720) physical=(1296, 699) drawable=(1296, 699)
+Could not open 'cache/shaders.txt':
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1280, 720) physical=(1296, 699) drawable=(1296, 699)
+Could not open 'cache/shaders.txt':
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1280, 720) physical=(1296, 699) drawable=(1296, 699)
+Could not open 'cache/shaders.txt':
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1280, 720) physical=(1296, 699) drawable=(1296, 699)
+Could not open 'cache/shaders.txt':
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 12970.52s
+Loading error handling took 0.06s
+Loading script took 0.94s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+
+File "game/script.rpy", line 33: expected statement.
+    Stats['Health'] = 3
+                    ^
+
+File "game/script.rpy", line 61: expected statement.
+    driver = "Are you done? I was being nice but now it's my turn!"
+           ^
+
+File "game/script.rpy", line 63: expected statement.
+    Fade
+        ^
+DPI scale factor: 1.000000
+Interface start took 0.08s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Mesa Intel(R) HD Graphics 520 (SKL GT2)'
+Version: b'4.6 (Compatibility Profile) Mesa 23.2.1-1ubuntu3.1'
+Display Info: None
+Screen sizes: virtual=(1280, 720) physical=(1296, 699) drawable=(1296, 699)
+Could not open 'cache/shaders.txt':
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1280, 720) physical=(1296, 699) drawable=(1296, 699)
+Could not open 'cache/shaders.txt':
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 12972.79s
+Loading error handling took 0.06s
+Loading script took 0.98s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+
+File "game/script.rpy", line 33: expected statement.
+    Stats['Health'] = 3
+                    ^
+
+File "game/script.rpy", line 61: expected statement.
+    driver = "Are you done? I was being nice but now it's my turn!"
+           ^
+
+File "game/script.rpy", line 63: expected statement.
+    Fade
+        ^
+DPI scale factor: 1.000000
+Interface start took 0.08s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Mesa Intel(R) HD Graphics 520 (SKL GT2)'
+Version: b'4.6 (Compatibility Profile) Mesa 23.2.1-1ubuntu3.1'
+Display Info: None
+Screen sizes: virtual=(1280, 720) physical=(1296, 699) drawable=(1296, 699)
+Could not open 'cache/shaders.txt':
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1280, 720) physical=(1296, 699) drawable=(1296, 699)
+Could not open 'cache/shaders.txt':
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 12979.34s
+Loading error handling took 0.06s
+Loading script took 0.94s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+
+File "game/script.rpy", line 33: expected statement.
+    Stats['Health'] = 3
+                    ^
+
+File "game/script.rpy", line 61: expected statement.
+    driver = "Are you done? I was being nice but now it's my turn!"
+           ^
+
+File "game/script.rpy", line 63: expected statement.
+    Fade
+        ^
+DPI scale factor: 1.000000
+Interface start took 0.08s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Mesa Intel(R) HD Graphics 520 (SKL GT2)'
+Version: b'4.6 (Compatibility Profile) Mesa 23.2.1-1ubuntu3.1'
+Display Info: None
+Screen sizes: virtual=(1280, 720) physical=(1296, 699) drawable=(1296, 699)
+Could not open 'cache/shaders.txt':
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1280, 720) physical=(1296, 699) drawable=(1296, 699)
+Could not open 'cache/shaders.txt':
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1280, 720) physical=(1296, 699) drawable=(1296, 699)
+Could not open 'cache/shaders.txt':
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1280, 720) physical=(1296, 699) drawable=(1296, 699)
+Could not open 'cache/shaders.txt':
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 12988.45s
+Loading error handling took 0.06s
+Loading script took 0.92s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+
+File "game/script.rpy", line 33: expected statement.
+    Stats['Health'] = 3
+                    ^
+
+File "game/script.rpy", line 61: expected statement.
+    driver = "Are you done? I was being nice but now it's my turn!"
+           ^
+
+File "game/script.rpy", line 63: expected statement.
+    Fade:
+        ^
+DPI scale factor: 1.000000
+Interface start took 0.08s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Mesa Intel(R) HD Graphics 520 (SKL GT2)'
+Version: b'4.6 (Compatibility Profile) Mesa 23.2.1-1ubuntu3.1'
+Display Info: None
+Screen sizes: virtual=(1280, 720) physical=(1296, 699) drawable=(1296, 699)
+Could not open 'cache/shaders.txt':
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1280, 720) physical=(1296, 699) drawable=(1296, 699)
+Could not open 'cache/shaders.txt':
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1280, 720) physical=(1296, 699) drawable=(1296, 699)
+Could not open 'cache/shaders.txt':
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1280, 720) physical=(1296, 699) drawable=(1296, 699)
+Could not open 'cache/shaders.txt':
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 13022.20s
+Loading error handling took 0.06s
+Loading script took 0.95s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+
+File "game/script.rpy", line 33: expected statement.
+    Stats['Health'] = 3
+                    ^
+
+File "game/script.rpy", line 61: expected statement.
+    driver = "Are you done? I was being nice but now it's my turn!"
+           ^
+DPI scale factor: 1.000000
+Interface start took 0.08s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Mesa Intel(R) HD Graphics 520 (SKL GT2)'
+Version: b'4.6 (Compatibility Profile) Mesa 23.2.1-1ubuntu3.1'
+Display Info: None
+Screen sizes: virtual=(1280, 720) physical=(1296, 699) drawable=(1296, 699)
+Could not open 'cache/shaders.txt':
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1280, 720) physical=(1296, 699) drawable=(1296, 699)
+Could not open 'cache/shaders.txt':
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1280, 720) physical=(1296, 699) drawable=(1296, 699)
+Could not open 'cache/shaders.txt':
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1280, 720) physical=(1296, 699) drawable=(1296, 699)
+Could not open 'cache/shaders.txt':
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1280, 720) physical=(1296, 699) drawable=(1296, 699)
+Could not open 'cache/shaders.txt':
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1280, 720) physical=(1296, 699) drawable=(1296, 699)
+Could not open 'cache/shaders.txt':
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 13072.04s
+Loading error handling took 0.06s
+Loading script took 0.92s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+
+File "game/script.rpy", line 33: expected statement.
+    Stats['Health'] = 3
+                    ^
+DPI scale factor: 1.000000
+Interface start took 0.08s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Mesa Intel(R) HD Graphics 520 (SKL GT2)'
+Version: b'4.6 (Compatibility Profile) Mesa 23.2.1-1ubuntu3.1'
+Display Info: None
+Screen sizes: virtual=(1280, 720) physical=(1296, 699) drawable=(1296, 699)
+Could not open 'cache/shaders.txt':
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1280, 720) physical=(1296, 699) drawable=(1296, 699)
+Could not open 'cache/shaders.txt':
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1280, 720) physical=(1296, 699) drawable=(1296, 699)
+Could not open 'cache/shaders.txt':
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1280, 720) physical=(1296, 699) drawable=(1296, 699)
+Could not open 'cache/shaders.txt':
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 13094.27s
+Loading error handling took 0.06s
+Loading script took 0.92s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+
+File "game/script.rpy", line 49: 'return' outside function
+
+File "game/script.rpy", line 72: 'return' outside function
+DPI scale factor: 1.000000
+Interface start took 0.08s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Mesa Intel(R) HD Graphics 520 (SKL GT2)'
+Version: b'4.6 (Compatibility Profile) Mesa 23.2.1-1ubuntu3.1'
+Display Info: None
+Screen sizes: virtual=(1280, 720) physical=(1296, 699) drawable=(1296, 699)
+Could not open 'cache/shaders.txt':
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1280, 720) physical=(1296, 699) drawable=(1296, 699)
+Could not open 'cache/shaders.txt':
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 13146.71s
+Loading error handling took 0.06s
+Loading script took 0.94s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+Running init code took 0.07s
 Loading analysis data took 0.02s
 Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.01s
+Reloading save slot metadata took 0.02s
 Index archives took 0.00s
+Backing up script files to '/home/unkown/.renpy/backups/Furventure_Working':
 Dump and make backups took 0.05s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc took 0.03s
+Initial gc took 0.04s
 DPI scale factor: 1.000000
 Creating interface object took 0.00s
 Cleaning stores took 0.00s
 Init translation took 0.04s
 Build styles took 0.00s
-Load screen analysis took 0.03s
-Analyze screens took 0.00s
-Save screen analysis took 0.00s
-Prepare screens took 0.07s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.08s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Mesa Intel(R) HD Graphics 520 (SKL GT2)'
+Version: b'4.6 (Compatibility Profile) Mesa 23.2.1-1ubuntu3.1'
+Display Info: None
+Screen sizes: virtual=(1280, 720) physical=(1296, 699) drawable=(1296, 699)
+Could not open 'cache/shaders.txt':
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1280, 720) physical=(1296, 699) drawable=(1296, 699)
+Could not open 'cache/shaders.txt':
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/script.rpy", line 46, in script
+    python:
+  File "/home/unkown/Renpy/renpy/ast.py", line 823, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "/home/unkown/Renpy/renpy/python.py", line 1178, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/script.rpy", line 48, in <module>
+    roll = Stat_check(Stats['Agility'])
+NameError: name 'Stats' is not defined
+
+While running game code:
+  File "game/script.rpy", line 46, in script
+    python:
+  File "game/script.rpy", line 48, in <module>
+    roll = Stat_check(Stats['Agility'])
+NameError: name 'Stats' is not defined
