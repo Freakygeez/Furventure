@@ -3,36 +3,42 @@ define driver = Character("Driver")
 define fox = Character("Fox")
 define cat = Character("Cat")
 
-$ Stats = {
-    Health: 10,
-    Attack: 3,
-    Deffence: 5,
-    Strength: 5,
-    Agility: 6,
-    Dexterity: 7
-}
+
+default Health = 10
+default Attack = 3
+default Defence = 5
+default Strength = 5
+default Stamina = 3
+default Agility = 6
+default Dexterity = 7
+
 
 #### PROLOGUE ####
+# Our player, a lowly deer, finds themselves stripped of all of their belongings they didn't even know they had
+# and fast on their way to a life of slavery.
+# This pivotal moment in the game determines the next few scenes, will they manage to escape the slaver or 
+# will they accept their fate to become a slave?
+###################
 
 label start:
-    with Fade(2, 3, 3)
-    play sound 'Atmos/Cart.wav' 
-    scene cart 
+with Fade(1, 1, 1)
+play sound 'Atmos/Cart.wav' 
+scene cart 
 
-show driver normal
+#show driver normal
 driver "Right you lot, rest break!"
-driver "Oh you're alive then, good. I found's you on the side of the road passed out,
-        must of been bandits or something as you looked in a sorry state an' 
+driver "Oh you're alive then, good. I found's you on the side of the road passed out like..."
+driver "Must of been bandits or something as you looked in a sorry state an' 
         nothin' on yer save for them clothes of yours."
 
-show driver serious
-driver "Anyway, you're mine now see, slavers rights and all that.... 
-        I'm taking you to Sabel, to be sold. I suppose you could try to run, by the state of you I'd give you maybe a hour before I found's yer again...
-        Wouldn't be too pleased mind, would have to take it on on yer."
+#show driver serious
+driver "Anyway, you're mine now see, slavers rights and all that...."
+driver "I'm taking you to Sabel, to be sold. I suppose you could try to run, by the state of you I'd give you maybe a hour before I found's yer again..."
+driver "Wouldn't be too pleased mind, would have to take it on on yer."
 
 #Stats['Health'] = 3
 "You have 3 HP remaining. You might be able to escape but it'll be risky..."
-show driver laugh fade normal
+#show driver laugh fade normal
 
 menu Cart_Escape:
     "What do you do?"
@@ -45,7 +51,7 @@ menu Cart_Escape:
             "Go for the legs! (Agil check)":
                 python:
                     from Game_Logic import Stat_check
-                    roll = Stat_check(Stats['Agility'])
+                    roll = Stat_check(Agility)
                 #show roll  will eventually show a number on screen
                 if roll >= 18:
                     "As the driver turns to leave you boot him in the back of his knees"
@@ -67,7 +73,7 @@ menu Cart_Escape:
 
                 python:
                     from Game_Logic import Stat_check
-                    roll = Stat_check(Stats['Sta'])
+                    roll = Stat_check(Stamina)
                     
             "Go for the face! (Agil + str check)":
                 "Face combat"
@@ -80,8 +86,10 @@ menu Cart_Escape:
         #Agility check to avoid whip
         #Sta check to keep running 
 
-label outside_cart:
-    scene cart exterior with fade
+
+#label outside_cart:
+"""
+scene cart exterior with fade
     "Stepping out you are able to better see your surroundings"
     "You appear to be on a main trail heading West toward Sabel"
     "There are only two others with you, a cat and a Fox along with the Driver"
@@ -99,4 +107,4 @@ label outside_cart:
         "Only one guard? I'm running!":
             "Jump back to escape logic"
             #Agility check logic with sub menu
-        
+"""

@@ -2,9 +2,33 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 49: 'return' outside function
+File "game/script.rpy", line 6: expected statement.
+    Health = 10
+           ^
 
-File "game/script.rpy", line 72: 'return' outside function
+File "game/script.rpy", line 7: expected statement.
+    Attack = 3
+           ^
 
-Ren'Py Version: Ren'Py 8.2.2.24041101+nightly
-Mon Apr 22 16:50:03 2024
+File "game/script.rpy", line 8: expected statement.
+    Defence = 5
+            ^
+
+File "game/script.rpy", line 9: expected statement.
+    Strength = 5
+             ^
+
+File "game/script.rpy", line 10: expected statement.
+    Stamina = 3
+            ^
+
+File "game/script.rpy", line 11: expected statement.
+    Agility = 6
+            ^
+
+File "game/script.rpy", line 12: expected statement.
+    Dexterity = 7
+              ^
+
+Ren'Py Version: Ren'Py 8.2.2.24042401+nightly
+Fri Apr 26 18:02:13 2024
