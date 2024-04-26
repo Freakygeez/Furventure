@@ -2,33 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 6: expected statement.
-    Health = 10
-           ^
-
-File "game/script.rpy", line 7: expected statement.
-    Attack = 3
-           ^
-
-File "game/script.rpy", line 8: expected statement.
-    Defence = 5
-            ^
-
-File "game/script.rpy", line 9: expected statement.
-    Strength = 5
-             ^
-
-File "game/script.rpy", line 10: expected statement.
-    Stamina = 3
-            ^
-
-File "game/script.rpy", line 11: expected statement.
-    Agility = 6
-            ^
-
-File "game/script.rpy", line 12: expected statement.
-    Dexterity = 7
-              ^
+File "game/script.rpy", line 97: expected python_expression
+    elif:
+        ^
 
 Ren'Py Version: Ren'Py 8.2.2.24042401+nightly
-Fri Apr 26 18:02:13 2024
+Fri Apr 26 23:16:32 2024

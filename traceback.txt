@@ -1,38 +1,26 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 57, in script
-    "As the driver turns to leave you boot him in the back of his knees"
-Exception: Expected transition to return a displayable, not a <partial <function Fade at 0x7d5cf1a20af0> () {'old_widget': <renpy.display.layout.Fixed object at 0x7d5cf0b75880>, 'new_widget': <renpy.display.layout.Fixed object at 0x7d5cf0b75910>}>
+  File "game/script.rpy", line 66, in script
+    $ roll = StatCheck.Stat_check(Agility)
+  File "game/script.rpy", line 66, in <module>
+    $ roll = StatCheck.Stat_check(Agility)
+AttributeError: 'NoneType' object has no attribute 'Stat_check'
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 57, in script
-    "As the driver turns to leave you boot him in the back of his knees"
-  File "/home/unkown/Renpy/renpy/ast.py", line 2560, in execute
-    Say.execute(self)
-  File "/home/unkown/Renpy/renpy/ast.py", line 615, in execute
-    renpy.exports.say(who, what, *args, **kwargs)
-  File "/home/unkown/Renpy/renpy/exports.py", line 1493, in say
-    who(what, *args, **kwargs)
-  File "/home/unkown/Renpy/renpy/character.py", line 1394, in __call__
-    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
-  File "/home/unkown/Renpy/renpy/character.py", line 1045, in do_display
-    display_say(who,
-  File "/home/unkown/Renpy/renpy/character.py", line 741, in display_say
-    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
-  File "/home/unkown/Renpy/renpy/ui.py", line 301, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "/home/unkown/Renpy/renpy/display/core.py", line 2165, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "/home/unkown/Renpy/renpy/display/core.py", line 2608, in interact_core
-    trans = instantiate_transition(None, old_root, layers_root)
-  File "/home/unkown/Renpy/renpy/display/core.py", line 2523, in instantiate_transition
-    raise Exception("Expected transition to return a displayable, not a {!r}".format(trans))
-Exception: Expected transition to return a displayable, not a <partial <function Fade at 0x7d5cf1a20af0> () {'old_widget': <renpy.display.layout.Fixed object at 0x7d5cf0b75880>, 'new_widget': <renpy.display.layout.Fixed object at 0x7d5cf0b75910>}>
+  File "game/script.rpy", line 66, in script
+    $ roll = StatCheck.Stat_check(Agility)
+  File "/home/unkown/Renpy/renpy/ast.py", line 823, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "/home/unkown/Renpy/renpy/python.py", line 1178, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/script.rpy", line 66, in <module>
+    $ roll = StatCheck.Stat_check(Agility)
+AttributeError: 'NoneType' object has no attribute 'Stat_check'
 
 Linux-6.5.0-28-generic-x86_64-with-glibc2.38 x86_64
 Ren'Py 8.2.2.24042401+nightly
 Furventure 1.1.1
-Fri Apr 26 18:09:10 2024
+Fri Apr 26 23:17:10 2024

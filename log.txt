@@ -1,45 +1,21 @@
-2024-04-26 08:02:13 UTC
+2024-04-26 13:16:32 UTC
 Linux-6.5.0-28-generic-x86_64-with-glibc2.38
 Ren'Py 8.2.2.24042401+nightly
 
-Early init took 0.06s
+Early init took 0.07s
 Loading error handling took 0.04s
-Loading script took 0.13s
+Loading script took 0.27s
 Loading save slot metadata took 0.03s
 Loading persistent took 0.00s
 
-File "game/script.rpy", line 6: expected statement.
-    Health = 10
-           ^
-
-File "game/script.rpy", line 7: expected statement.
-    Attack = 3
-           ^
-
-File "game/script.rpy", line 8: expected statement.
-    Defence = 5
-            ^
-
-File "game/script.rpy", line 9: expected statement.
-    Strength = 5
-             ^
-
-File "game/script.rpy", line 10: expected statement.
-    Stamina = 3
-            ^
-
-File "game/script.rpy", line 11: expected statement.
-    Agility = 6
-            ^
-
-File "game/script.rpy", line 12: expected statement.
-    Dexterity = 7
-              ^
+File "game/script.rpy", line 97: expected python_expression
+    elif:
+        ^
 DPI scale factor: 1.000000
-Interface start took 0.20s
+Interface start took 0.19s
 
 Initializing gl2 renderer:
-primary display bounds: (166, 1080, 1366, 768)
+primary display bounds: (0, 0, 1920, 1080)
 swap interval: 1 frames
 Windowed mode.
 Vendor: "b'Intel'"
@@ -49,9 +25,9 @@ Display Info: None
 Screen sizes: virtual=(1280, 720) physical=(916, 515) drawable=(916, 515)
 Maximum texture size: 4096x4096
 Resetting cache.
-Early init took 71.63s
-Loading error handling took 0.03s
-Loading script took 0.10s
+Early init took 22.09s
+Loading error handling took 0.02s
+Loading script took 0.09s
 Loading save slot metadata took 0.02s
 Loading persistent took 0.00s
 Running init code took 0.05s
@@ -72,134 +48,6 @@ Build styles took 0.00s
 Load screen analysis took 0.00s
 Analyze screens took 0.01s
 Save screen analysis took 0.02s
-Prepare screens took 0.12s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.03s
-Running _start took 0.00s
-Interface start took 0.08s
-
-Initializing gl2 renderer:
-primary display bounds: (166, 1080, 1366, 768)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Mesa Intel(R) HD Graphics 520 (SKL GT2)'
-Version: b'4.6 (Compatibility Profile) Mesa 23.2.1-1ubuntu3.1'
-Display Info: None
-Screen sizes: virtual=(1280, 720) physical=(916, 515) drawable=(916, 515)
-Maximum texture size: 4096x4096
-
-Full traceback:
-  File "game/script.rpy", line 51, in script
-    python:
-  File "/home/unkown/Renpy/renpy/ast.py", line 823, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "/home/unkown/Renpy/renpy/python.py", line 1178, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "game/script.rpy", line 53, in <module>
-    roll = Stat_check(Agility)
-NameError: name 'Agility' is not defined
-
-While running game code:
-  File "game/script.rpy", line 51, in script
-    python:
-  File "game/script.rpy", line 53, in <module>
-    roll = Stat_check(Agility)
-NameError: name 'Agility' is not defined
-Resetting cache.
-Early init took 294.66s
-Loading error handling took 0.02s
-Loading script took 0.09s
-Loading save slot metadata took 0.02s
-Loading persistent took 0.00s
-Running init code took 0.04s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.02s
-Index archives took 0.00s
-Backing up script files to '/home/unkown/.renpy/backups/Furventure_Working':
-Dump and make backups took 0.06s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.06s
-DPI scale factor: 1.000000
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.08s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Interface start took 0.06s
-
-Initializing gl2 renderer:
-primary display bounds: (166, 1080, 1366, 768)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Mesa Intel(R) HD Graphics 520 (SKL GT2)'
-Version: b'4.6 (Compatibility Profile) Mesa 23.2.1-1ubuntu3.1'
-Display Info: None
-Screen sizes: virtual=(1280, 720) physical=(916, 515) drawable=(916, 515)
-Maximum texture size: 4096x4096
-
-Full traceback:
-  File "game/script.rpy", line 91, in script
-    "Stepping out you are able to better see your surroundings"
-  File "/home/unkown/Renpy/renpy/ast.py", line 2560, in execute
-    Say.execute(self)
-  File "/home/unkown/Renpy/renpy/ast.py", line 615, in execute
-    renpy.exports.say(who, what, *args, **kwargs)
-  File "/home/unkown/Renpy/renpy/exports.py", line 1493, in say
-    who(what, *args, **kwargs)
-  File "/home/unkown/Renpy/renpy/character.py", line 1394, in __call__
-    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
-  File "/home/unkown/Renpy/renpy/character.py", line 1045, in do_display
-    display_say(who,
-  File "/home/unkown/Renpy/renpy/character.py", line 741, in display_say
-    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
-  File "/home/unkown/Renpy/renpy/ui.py", line 301, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "/home/unkown/Renpy/renpy/display/core.py", line 2165, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "/home/unkown/Renpy/renpy/display/core.py", line 2608, in interact_core
-    trans = instantiate_transition(None, old_root, layers_root)
-  File "/home/unkown/Renpy/renpy/display/core.py", line 2523, in instantiate_transition
-    raise Exception("Expected transition to return a displayable, not a {!r}".format(trans))
-Exception: Expected transition to return a displayable, not a <partial <function Fade at 0x7d5cf1a20af0> () {'old_widget': <renpy.display.layout.Fixed object at 0x7d5cf1051a60>, 'new_widget': <renpy.display.layout.Fixed object at 0x7d5cf1051ac0>}>
-
-While running game code:
-  File "game/script.rpy", line 91, in script
-    "Stepping out you are able to better see your surroundings"
-Exception: Expected transition to return a displayable, not a <partial <function Fade at 0x7d5cf1a20af0> () {'old_widget': <renpy.display.layout.Fixed object at 0x7d5cf1051a60>, 'new_widget': <renpy.display.layout.Fixed object at 0x7d5cf1051ac0>}>
-Resetting cache.
-Early init took 379.19s
-Loading error handling took 0.02s
-Loading script took 0.10s
-Loading save slot metadata took 0.02s
-Loading persistent took 0.00s
-Running init code took 0.04s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.02s
-Index archives took 0.00s
-Backing up script files to '/home/unkown/.renpy/backups/Furventure_Working':
-Dump and make backups took 0.05s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.05s
-DPI scale factor: 1.000000
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
 Prepare screens took 0.08s
 Save pyanalysis. took 0.00s
 Save bytecode. took 0.02s
@@ -207,7 +55,7 @@ Running _start took 0.00s
 Interface start took 0.05s
 
 Initializing gl2 renderer:
-primary display bounds: (166, 1080, 1366, 768)
+primary display bounds: (0, 0, 1920, 1080)
 swap interval: 1 frames
 Windowed mode.
 Vendor: "b'Intel'"
@@ -218,101 +66,19 @@ Screen sizes: virtual=(1280, 720) physical=(916, 515) drawable=(916, 515)
 Maximum texture size: 4096x4096
 
 Full traceback:
-  File "game/script.rpy", line 89, in script
-    '''
-  File "/home/unkown/Renpy/renpy/ast.py", line 2560, in execute
-    Say.execute(self)
-  File "/home/unkown/Renpy/renpy/ast.py", line 615, in execute
-    renpy.exports.say(who, what, *args, **kwargs)
-  File "/home/unkown/Renpy/renpy/exports.py", line 1493, in say
-    who(what, *args, **kwargs)
-  File "/home/unkown/Renpy/renpy/character.py", line 1394, in __call__
-    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
-  File "/home/unkown/Renpy/renpy/character.py", line 1045, in do_display
-    display_say(who,
-  File "/home/unkown/Renpy/renpy/character.py", line 741, in display_say
-    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
-  File "/home/unkown/Renpy/renpy/ui.py", line 301, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "/home/unkown/Renpy/renpy/display/core.py", line 2165, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "/home/unkown/Renpy/renpy/display/core.py", line 2608, in interact_core
-    trans = instantiate_transition(None, old_root, layers_root)
-  File "/home/unkown/Renpy/renpy/display/core.py", line 2523, in instantiate_transition
-    raise Exception("Expected transition to return a displayable, not a {!r}".format(trans))
-Exception: Expected transition to return a displayable, not a <partial <function Fade at 0x7d5cf1a20af0> () {'old_widget': <renpy.display.layout.Fixed object at 0x7d5cf106c2e0>, 'new_widget': <renpy.display.layout.Fixed object at 0x7d5cf106c370>}>
+  File "game/script.rpy", line 66, in script
+    $ roll = StatCheck.Stat_check(Agility)
+  File "/home/unkown/Renpy/renpy/ast.py", line 823, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "/home/unkown/Renpy/renpy/python.py", line 1178, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/script.rpy", line 66, in <module>
+    $ roll = StatCheck.Stat_check(Agility)
+AttributeError: 'NoneType' object has no attribute 'Stat_check'
 
 While running game code:
-  File "game/script.rpy", line 89, in script
-    '''
-Exception: Expected transition to return a displayable, not a <partial <function Fade at 0x7d5cf1a20af0> () {'old_widget': <renpy.display.layout.Fixed object at 0x7d5cf106c2e0>, 'new_widget': <renpy.display.layout.Fixed object at 0x7d5cf106c370>}>
-Resetting cache.
-Early init took 416.43s
-Loading error handling took 0.02s
-Loading script took 0.09s
-Loading save slot metadata took 0.02s
-Loading persistent took 0.00s
-Running init code took 0.04s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.02s
-Index archives took 0.00s
-Backing up script files to '/home/unkown/.renpy/backups/Furventure_Working':
-Dump and make backups took 0.06s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.06s
-DPI scale factor: 1.000000
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.02s
-Prepare screens took 0.08s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Interface start took 0.06s
-
-Initializing gl2 renderer:
-primary display bounds: (166, 1080, 1366, 768)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Mesa Intel(R) HD Graphics 520 (SKL GT2)'
-Version: b'4.6 (Compatibility Profile) Mesa 23.2.1-1ubuntu3.1'
-Display Info: None
-Screen sizes: virtual=(1280, 720) physical=(916, 515) drawable=(916, 515)
-Maximum texture size: 4096x4096
-
-Full traceback:
-  File "game/script.rpy", line 57, in script
-    "As the driver turns to leave you boot him in the back of his knees"
-  File "/home/unkown/Renpy/renpy/ast.py", line 2560, in execute
-    Say.execute(self)
-  File "/home/unkown/Renpy/renpy/ast.py", line 615, in execute
-    renpy.exports.say(who, what, *args, **kwargs)
-  File "/home/unkown/Renpy/renpy/exports.py", line 1493, in say
-    who(what, *args, **kwargs)
-  File "/home/unkown/Renpy/renpy/character.py", line 1394, in __call__
-    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
-  File "/home/unkown/Renpy/renpy/character.py", line 1045, in do_display
-    display_say(who,
-  File "/home/unkown/Renpy/renpy/character.py", line 741, in display_say
-    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
-  File "/home/unkown/Renpy/renpy/ui.py", line 301, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "/home/unkown/Renpy/renpy/display/core.py", line 2165, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "/home/unkown/Renpy/renpy/display/core.py", line 2608, in interact_core
-    trans = instantiate_transition(None, old_root, layers_root)
-  File "/home/unkown/Renpy/renpy/display/core.py", line 2523, in instantiate_transition
-    raise Exception("Expected transition to return a displayable, not a {!r}".format(trans))
-Exception: Expected transition to return a displayable, not a <partial <function Fade at 0x7d5cf1a20af0> () {'old_widget': <renpy.display.layout.Fixed object at 0x7d5cf0b75880>, 'new_widget': <renpy.display.layout.Fixed object at 0x7d5cf0b75910>}>
-
-While running game code:
-  File "game/script.rpy", line 57, in script
-    "As the driver turns to leave you boot him in the back of his knees"
-Exception: Expected transition to return a displayable, not a <partial <function Fade at 0x7d5cf1a20af0> () {'old_widget': <renpy.display.layout.Fixed object at 0x7d5cf0b75880>, 'new_widget': <renpy.display.layout.Fixed object at 0x7d5cf0b75910>}>
+  File "game/script.rpy", line 66, in script
+    $ roll = StatCheck.Stat_check(Agility)
+  File "game/script.rpy", line 66, in <module>
+    $ roll = StatCheck.Stat_check(Agility)
+AttributeError: 'NoneType' object has no attribute 'Stat_check'
